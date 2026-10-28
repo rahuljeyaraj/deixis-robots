@@ -33,7 +33,8 @@ All three robots reach the core the same way, over MCP. The vacuum goes through 
 ## Set-up
 
 You need [uv](https://docs.astral.sh/uv/) and Python 3.11 or 3.12. The web demo also needs
-Node 22 or newer. Each folder's own README has the full steps.
+Node 22 or newer. The vacuum's driver needs Python 3.14 (deebot-client's Windows wheels).
+Each folder's own README has the full steps.
 
 **The web demo** (the easiest way to try it; no robot needed):
 
@@ -41,6 +42,7 @@ Node 22 or newer. Each folder's own README has the full steps.
 cd deixis-web-demo
 copy .env.example .env           # then put a Nebius Token Factory key in .env
 uv sync
+uv run python scripts/fetch_models.py   # Parakeet, speech to words
 uv run webdemo                   # the server on http://127.0.0.1:8000
 cd web
 npm install
@@ -61,6 +63,7 @@ uv run pytest
 cd deixis-doodle
 uv sync --all-extras
 uv run pytest
+uv run python scripts/asr_fetch_models.py   # Parakeet, speech to words
 ```
 
 **The vacuum's driver:** see [`deixis-vacuum/README.md`](https://github.com/rahuljeyaraj/deixis-vacuum#set-up)
