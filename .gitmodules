@@ -1,0 +1,16 @@
+[submodule "deixis"]
+	path = deixis
+	url = https://github.com/rahuljeyaraj/deixis.git
+	branch = main
+[submodule "deixis-doodle"]
+	path = deixis-doodle
+	url = https://github.com/rahuljeyaraj/deixis-doodle.git
+	branch = main
+[submodule "deixis-web-demo"]
+	path = deixis-web-demo
+	url = https://github.com/rahuljeyaraj/deixis-web-demo.git
+	branch = main
+[submodule "deixis-vacuum"]
+	path = deixis-vacuum
+	url = https://github.com/rahuljeyaraj/deixis-vacuum.git
+	branch = main
