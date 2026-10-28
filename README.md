@@ -21,7 +21,7 @@ If you cloned without `--recurse-submodules`, run `git submodule update --init`.
 |---|---|---|
 | [`deixis`](https://github.com/rahuljeyaraj/deixis) | The core. Turns words and pointing into a place in the robot's own frame, with how sure it is, or one question when it is not sure. Pure code: no models, no camera, no robot. | MIT |
 | [`deixis-doodle`](https://github.com/rahuljeyaraj/deixis-doodle) | The app the plotter and the vacuum share (camera, hand and feet tracking, speech, the model), and the pen plotter: a converted Ender 3 that draws what you asked, where you pointed, at the size you showed. | MIT |
-| [`deixis-web-demo`](https://github.com/rahuljeyaraj/deixis-web-demo) | A virtual SO-101 robot arm in the browser, with a red, a green and a blue block. Point with the mouse and say "put that here". | MIT |
+| [`deixis-web-demo`](https://github.com/rahuljeyaraj/deixis-web-demo) | A virtual SO-101 robot arm in the browser, with a red, a green and a blue block. Point with a fingertip in front of the webcam (or the mouse) and say "put that here". | MIT |
 | [`deixis-vacuum`](https://github.com/rahuljeyaraj/deixis-vacuum) | The robot vacuum's driver: sends an off-the-shelf ECOVACS DEEBOT to clean a box on its map, over MCP. Its own repo because it uses `deebot-client`, which is GPL-3.0. | GPL-3.0 |
 
 The folders sit side by side on purpose: `deixis-doodle` and `deixis-web-demo` load the core
